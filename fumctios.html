@@ -1,0 +1,27 @@
+<html>
+<head>
+	<script>
+		function show()
+		{
+			document.writeln("Iam show() activated through Mouse Over event");
+		}
+		function display(c,d)
+		{
+			document.writeln(c);
+			document.writeln(d);
+		}
+		function add(a,b)
+		{
+			c=a+b;
+			window.alert(c);
+		}
+	</script>
+</head>
+<body>
+	<p onmouseover="show()">Place the Mouse Here!And Call Show()</p>
+	<p onload="add(3,5)">Onload and call add() of 3 and 5</p>
+	<font onmouseout="display(12,23)">Remove Mouse and call display()</font><br><br>
+	<input type="button" value="click to call add()" onclick="add(20,30)">
+	<h1 onclick="add(40,80)">Add Function with 40 and 80</h1>
+</body>
+</html>
